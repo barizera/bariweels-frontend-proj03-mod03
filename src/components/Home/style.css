@@ -1,0 +1,12 @@
+.Home_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tittle_Home_container {
+  color: rgb(93, 92, 92);
+  padding: 1rem;
+  font-size: 2rem;
+}

@@ -1,0 +1,43 @@
+.Card_container {
+  border: 2px outset #808080;
+  width: 250px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.493);
+  margin-bottom: 1.5rem;
+}
+
+.Card_container img {
+  width: 13rem;
+  height: 8rem;
+  object-fit: cover;
+  margin: 1.4rem 0 0 1.4rem;
+}
+
+.Card_container h3 {
+  font-size: 30px;
+  color: #656565;
+  text-align: center;
+}
+
+.CardInfos div p {
+  font-weight: 700;
+  font-size: 15px;
+  padding: 0.3rem;
+  color: #666666;
+  margin-left: 20%;
+}
+
+.CardInfos {
+  padding-left: 1.2rem;
+}
+
+.btn_adddCar {
+  margin: 0.8rem 0 1rem 1.7rem;
+  width: 10rem;
+  border-radius: 3px;
+  border: 2px outset #d7d7d7b5;
+  background: #ff8611;
+  padding: 0.3rem;
+  color: white;
+  height: 2rem;
+}

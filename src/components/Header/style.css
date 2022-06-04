@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: grey;
+ 
+}
+.Header_logo {
+  padding-left: 2rem;
+}
+
+span {
+  font-size: 35px;
+  font-family: "Bowlby One SC", cursive;
+  color: #ff8611;
+}
