@@ -1,11 +1,11 @@
 import logo from "../../assets/images/logocar.png";
-import "./style.css"
+import "./style.css";
 
-const Header = (props) => {
+const Header = () => {
   return (
     <header className="Header_container">
       <img className="Header_logo" width="150px" src={logo} alt="" />
-      <span>BariWeels</span>
+      <span>BariWheels</span>
     </header>
   );
 };

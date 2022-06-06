@@ -4,8 +4,8 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: grey;
- 
+  background-image: url("https://i.pinimg.com/originals/c6/a8/fb/c6a8fb9816e11fea3ee9a0587a38285d.jpg");
+  /* background: grey; */
 }
 .Header_logo {
   padding-left: 2rem;
@@ -15,4 +15,5 @@ span {
   font-size: 35px;
   font-family: "Bowlby One SC", cursive;
   color: #ff8611;
+  text-shadow: 6px 6px 10px black;
 }

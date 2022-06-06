@@ -1,20 +1,37 @@
 import "./style.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
-const Card = (props) => {
+const Card = ({ name, brand, category, color, img, id }) => {
+      // criamos a variável number
+  const [number, setNumber] = useState(0);
+
+  const addNumber = () => {
+    setNumber(number + 1);
+  };
+
+  const removeNumber = () => {
+    setNumber(number - 1);
+  };
+
   return (
-    <div className="Card_container">
-      <img src={props.img} alt={`Foto do Carro ${props.name}`} />
+    <div className="Card_container" key={`Card_container-${id}`}>
+      <span className="CardInfo_badge">{number}</span>
+      <img src={img} alt={`Foto do Carro ${name}`} />
       <div className="CardInfos">
         <div>
-          <h3>Carro: {props.name}</h3>
-          <p>Marca: {props.brand}</p>
-          <p>Categoria: {props.category}</p>
-          <p>Cor: {props.color}</p>
+          <h3>Carro: {name}</h3>
+          <p>Marca: {brand}</p>
+          <p>Categoria: {category}</p>
+          <p>Cor: {color}</p>
           <p>Preço: R$12,99 </p>
         </div>
-        <button className="btn_adddCar">
-          <FontAwesomeIcon icon="fa-solid fa-sack-dollar" />
+      </div>
+      <div className="btn_container">
+        <button className="btn_adddCar" onClick={addNumber}>
+          Adicionar
+        </button>
+        <button className="btn_removeCar" onClick={removeNumber}>
+          Remover
         </button>
       </div>
     </div>

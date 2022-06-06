@@ -20,13 +20,13 @@ const Home = () => {
     <div>
       <h2 className="tittle_Home_container">Miniaturas disponíveis:</h2>
       <div className="Home_container">
-        {cars.map((element) => {
+        {cars.map((element, index) => {
           return (
             <Card
-              key={element._id}
+              key={index}
+              id={element._id}
               name={element.name}
               brand={element.brand}
-              price={element.price}
               color={element.color}
               category={element.category}
               img={element.img}
