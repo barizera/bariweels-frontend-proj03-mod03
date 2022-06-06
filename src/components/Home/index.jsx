@@ -20,18 +20,8 @@ const Home = () => {
     <div>
       <h2 className="tittle_Home_container">Miniaturas disponíveis:</h2>
       <div className="Home_container">
-        {cars.map((element, index) => {
-          return (
-            <Card
-              key={index}
-              id={element._id}
-              name={element.name}
-              brand={element.brand}
-              color={element.color}
-              category={element.category}
-              img={element.img}
-            />
-          );
+        {cars.map((cars, index) => {
+          return <Card key={index} cars={cars} />;
         })}
       </div>
     </div>
