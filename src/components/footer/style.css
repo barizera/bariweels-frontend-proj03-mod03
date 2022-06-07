@@ -1,0 +1,67 @@
+.iconsFooter {
+  width: 35px;
+}
+
+.logo_car {
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/originals/c6/a8/fb/c6a8fb9816e11fea3ee9a0587a38285d.jpg");
+  min-height: 5vh;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+footer p {
+  font-size: 35px;
+  font-family: "Bowlby One SC", cursive;
+  margin-left: 1.5rem;
+  color: #ff8611;
+  text-shadow: 2px 2px 2px black;
+}
+
+.Contact {
+  margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 25px;
+  }
+
+  .logo_car {
+    width: 100px;
+  }
+
+  .iconsFooter {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer p {
+    font-size: 15px;
+    margin-left: -1.5rem;
+  }
+  .logo_car {
+    width: 80px;
+  }
+  .iconsFooter {
+    width: 20px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

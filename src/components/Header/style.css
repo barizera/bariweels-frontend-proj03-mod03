@@ -2,18 +2,33 @@
 
 header {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-image: url("https://i.pinimg.com/originals/c6/a8/fb/c6a8fb9816e11fea3ee9a0587a38285d.jpg");
+  min-height: 5vh;
   /* background: grey; */
 }
 .Header_logo {
   padding-left: 2rem;
+  width: 180px;
 }
 
-span {
+.Header_container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.p_logo {
   font-size: 35px;
   font-family: "Bowlby One SC", cursive;
   color: #ff8611;
   text-shadow: 6px 6px 10px black;
+}
+
+@media screen and (max-width: 800px) {
+  .Header_logo {
+    width: 100px;
+  }
 }

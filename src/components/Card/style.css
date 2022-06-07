@@ -51,14 +51,15 @@
 
 .CardInfo_badge {
   background-color: #ff8611;
-  color: aliceblue;
+  color: white;
   width: 3rem;
   height: 3rem;
   position: absolute;
   text-align: center;
   vertical-align: middle;
-  border-radius: 50%;
-  top: -9px;
-  left: -9px;
-  box-shadow: 1px 1px 4px #80808057;
+  border-radius: 0 0 30% 30%;
+  /* top: -15px;
+  left: -15px; */
+  font-size: 28px;
+  font-family: "Bowlby One SC", cursive;
 }

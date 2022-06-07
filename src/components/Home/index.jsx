@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className="Home">
       <h2 className="tittle_Home_container">Miniaturas disponíveis:</h2>
       <div className="Home_container">
         {cars.map((cars, index) => {

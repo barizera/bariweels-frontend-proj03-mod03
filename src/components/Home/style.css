@@ -1,8 +1,12 @@
+.Home {
+  min-height: 85vh;
+}
+
 .Home_container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .tittle_Home_container {
