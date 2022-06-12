@@ -2,7 +2,7 @@ import "./style.css";
 import { useState } from "react";
 
 const Card = ({ cars }) => {
-      // criamos a variável number
+  // criamos a variável number
   const [number, setNumber] = useState(0);
 
   const addNumber = () => {
@@ -15,11 +15,11 @@ const Card = ({ cars }) => {
 
   return (
     <div className="Card_container" key={`Card_container-${cars._id}`}>
+      <h3>Carro: {cars.name}</h3>
       <span className="CardInfo_badge">{number}</span>
       <img src={cars.img} alt={`Foto do Carro ${cars.name}`} />
       <div className="CardInfos">
         <div>
-          <h3>Carro: {cars.name}</h3>
           <p>Marca: {cars.brand}</p>
           <p>Categoria: {cars.category}</p>
           <p>Cor: {cars.color}</p>

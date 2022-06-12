@@ -2,19 +2,8 @@ import Card from "../Card";
 import "./style.css";
 import { useEffect, useState } from "react";
 
-const Home = () => {
-  const [cars, setCars] = useState([]);
+const Home = ({cars}) => {
 
-  const getCars = async () => {
-    const res = await fetch("http://localhost:3001/carros/getAllCars");
-    const carsList = await res.json();
-
-    setCars(carsList);
-  };
-
-  useEffect(() => {
-    getCars();
-  }, []);
 
   return (
     <div className="Home">

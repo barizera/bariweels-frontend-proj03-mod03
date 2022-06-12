@@ -17,7 +17,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 2rem;
 }
 
 .p_logo {
@@ -31,4 +30,13 @@ header {
   .Header_logo {
     width: 100px;
   }
+}
+
+.Header_container > img {
+  width: 50px;
+  right: 3rem;
+  position: relative;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  border: 2px outset black;
 }
