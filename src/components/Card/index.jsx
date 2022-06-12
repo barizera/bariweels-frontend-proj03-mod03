@@ -3,20 +3,11 @@ import { useState } from "react";
 
 const Card = ({ cars }) => {
   // criamos a variável number
-  const [number, setNumber] = useState(0);
-
-  const addNumber = () => {
-    setNumber(number + 1);
-  };
-
-  const removeNumber = () => {
-    setNumber(number - 1);
-  };
 
   return (
     <div className="Card_container" key={`Card_container-${cars._id}`}>
       <h3>Carro: {cars.name}</h3>
-      <span className="CardInfo_badge">{number}</span>
+
       <img src={cars.img} alt={`Foto do Carro ${cars.name}`} />
       <div className="CardInfos">
         <div>
@@ -27,10 +18,10 @@ const Card = ({ cars }) => {
         </div>
       </div>
       <div className="btn_container">
-        <button className="btn_adddCar" onClick={addNumber}>
-          Adicionar
+        <button className="btn_editCar" >
+          Editar
         </button>
-        <button className="btn_removeCar" onClick={removeNumber}>
+        <button className="btn_removeCar" >
           Remover
         </button>
       </div>

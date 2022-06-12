@@ -8,7 +8,7 @@ const Header = ({ getCars }) => {
   const [showModalCreate, setShowModalCreate] = useState(false);
 
   const handleShowModalCreate = () => {
-    setShowModalCreate(!showModalCreate);
+    setShowModalCreate(!showModalCreate); //toggle
   };
 
   return (

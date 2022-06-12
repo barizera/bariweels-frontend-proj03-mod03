@@ -36,7 +36,7 @@
   justify-content: center;
 }
 
-.btn_adddCar,
+.btn_editCar,
 .btn_removeCar {
   margin: 0.5rem;
   width: 10rem;
@@ -46,19 +46,4 @@
   padding: 0.3rem;
   color: white;
   height: 2rem;
-}
-
-.CardInfo_badge {
-  background-color: #ff8611;
-  color: white;
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  text-align: center;
-  vertical-align: middle;
-  border-radius: 50%;
-  /* top: -15px;
-  left: -15px; */
-  font-size: 28px;
-  font-family: "Bowlby One SC", cursive;
 }

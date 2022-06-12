@@ -6,7 +6,6 @@ import Footer from "./components/footer/footer";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import { Toaster } from "react-hot-toast";
-import ModalCreateCar from "./components/Modals/create";
 
 // cada componente é uma function, onde podemos passar tudo que for
 function App() {
