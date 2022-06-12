@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer>
       <div>
-        <p>BareWhells</p>
+        <p>BariWhells</p>
         <img className="iconsFooter" src={registered} alt="" />
       </div>
       <img className="logo_car" src={logo} alt="logo BariWheels" />

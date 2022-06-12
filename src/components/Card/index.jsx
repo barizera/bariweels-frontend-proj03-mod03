@@ -1,8 +1,17 @@
 import "./style.css";
 import { useState } from "react";
+import ModalRemoveCar from "../Modals/delete";
 
-const Card = ({ cars }) => {
-  // criamos a variável number
+const Card = ({ cars, getCars }) => {
+  const [showRemoveModal, setShowRemoveModal] = useState(false);
+  const [showEditModal, setShowEditModal] = useState(false);
+
+  const handleShowRemoveModal = () => {
+    setShowRemoveModal(!showRemoveModal);
+  };
+  const handleShowEditModal = () => {
+    setShowEditModal(!showEditModal);
+  };
 
   return (
     <div className="Card_container" key={`Card_container-${cars._id}`}>
@@ -18,12 +27,19 @@ const Card = ({ cars }) => {
         </div>
       </div>
       <div className="btn_container">
-        <button className="btn_editCar" >
+        <button className="btn_editCar" onClick={handleShowEditModal}>
           Editar
         </button>
-        <button className="btn_removeCar" >
+        <button className="btn_removeCar" onClick={handleShowRemoveModal}>
           Remover
         </button>
+        {showRemoveModal && (
+          <ModalRemoveCar
+            cars={cars}
+            closeModal={handleShowRemoveModal}
+            getCars={getCars}
+          />
+        )}
       </div>
     </div>
   );

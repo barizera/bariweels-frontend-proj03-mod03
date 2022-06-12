@@ -5,7 +5,7 @@ import ReactLoading from "react-loading";
 
 const Home = ({ cars, getCars }) => {
   const [filterInput, setFilterInput] = useState("");
- 
+
   return (
     <div className="Home">
       <h2 className="tittle_Home_container">Miniaturas disponíveis:</h2>
@@ -26,12 +26,12 @@ const Home = ({ cars, getCars }) => {
                 )
                 .map((element) => {
                   return (
-                    <Card getcars={getCars} key={element._id} cars={element} />
+                    <Card getCars={getCars} key={element._id} cars={element} />
                   );
                 })
             : cars.map((element) => {
                 return (
-                  <Card getcars={getCars} key={element._id} cars={element} />
+                  <Card getCars={getCars} key={element._id} cars={element} />
                 );
               })}
         </div>
