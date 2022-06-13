@@ -23,10 +23,10 @@ const ModalRemoveCar = ({ closeModal, cars, getCars }) => {
 
   return (
     <>
-      <div className="modal-overlay">
+      <div className="modal-remove-overlay">
         <div className="modalRemove-container">
           <h3>Deseja excluir a miniatura {cars.name}?</h3>
-          <div className="modalRemove-actions">
+          <div className="modal-remove-actions">
             <button className="cancelButton" onClick={closeModal}>
               Não
             </button>

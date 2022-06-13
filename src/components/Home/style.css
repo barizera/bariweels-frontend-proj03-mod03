@@ -14,3 +14,10 @@
   padding: 1rem;
   font-size: 2rem;
 }
+
+.Home > input {
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+  margin-left: 6rem;
+  outline: none;
+}

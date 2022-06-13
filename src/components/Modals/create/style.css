@@ -45,4 +45,21 @@
   border-radius: 0.7rem;
   border: none;
   margin-top: 2%;
+  cursor: pointer;
+}
+.modal_body > button:hover {
+  background-color: orange;
+  border: 1px black outset;
+  color: black;
+  font-weight: 600;
+}
+
+.modal_header > span {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal_header > span:hover {
+  transform: scale(2);
+  transition: 0.7s;
 }

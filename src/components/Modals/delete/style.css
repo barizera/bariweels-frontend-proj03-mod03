@@ -1,0 +1,52 @@
+.modal-remove-overlay {
+  background-color: rgba(0, 0, 0, 0.502);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modalRemove-container {
+  width: 30%;
+  max-width: 100%;
+  min-height: 250px;
+  background-color: #ffd02f;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  border: outset black 2px;
+}
+.modal-remove-actions {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.modal-remove-actions > button {
+  padding: 0.7rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.modal-remove-actions .cancelButton:hover {
+  background-color: red;
+  color: white;
+  border: white outset 2px;
+  transition: 0.5s;
+}
+.modal-remove-actions .successButton:hover {
+  background-color: green;
+  color: white;
+  border: white outset 2px;
+  transition: 0.5s;
+}

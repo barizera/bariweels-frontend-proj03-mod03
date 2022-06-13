@@ -18,6 +18,7 @@
   font-size: 20px;
   color: #656565;
   text-align: center;
+  margin-top: 1rem;
 }
 
 .CardInfos div p {
@@ -46,4 +47,5 @@
   padding: 0.3rem;
   color: white;
   height: 2rem;
+  cursor: pointer;
 }
