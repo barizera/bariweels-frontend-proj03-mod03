@@ -43,41 +43,43 @@ const ModalUpdateCar = ({ closeModal, cars, getCars }) => {
     <>
       <div className="modal-update-overlay">
         <div className="modal-update-container">
-          <div>
+          <div className="modal-update-header">
             <h3>Editar miniatura</h3>
-            <button onClick={closeModal}>X</button>
+            <span onClick={closeModal}>X</span>
           </div>
-          <input
-            value={name}
-            placeholder="Digite o nome..."
-            onChange={(event) => setName(event.target.value)}
-            name="name"
-          />
-          <input
-            value={brand}
-            placeholder="Digite a marca ..."
-            onChange={(event) => setBrand(event.target.value)}
-            name="brand"
-          />
-          <input
-            value={category}
-            placeholder="Digite a categoria ..."
-            onChange={(event) => setCategory(event.target.value)}
-            name="category"
-          />
-          <input
-            value={color}
-            placeholder="Digite a cor ..."
-            onChange={(event) => setColor(event.target.value)}
-            name="color"
-          />
-          <input
-            value={img}
-            placeholder="Digite o caminho da imagem..."
-            onChange={(event) => setImg(event.target.value)}
-            name="img"
-          />
-          <button onClick={handleUpdateCar}>Editar</button>
+          <div className="modal-update-body">
+            <input
+              value={name}
+              placeholder="Digite o nome..."
+              onChange={(event) => setName(event.target.value)}
+              name="name"
+            />
+            <input
+              value={brand}
+              placeholder="Digite a marca ..."
+              onChange={(event) => setBrand(event.target.value)}
+              name="brand"
+            />
+            <input
+              value={category}
+              placeholder="Digite a categoria ..."
+              onChange={(event) => setCategory(event.target.value)}
+              name="category"
+            />
+            <input
+              value={color}
+              placeholder="Digite a cor ..."
+              onChange={(event) => setColor(event.target.value)}
+              name="color"
+            />
+            <input
+              value={img}
+              placeholder="Digite o caminho da imagem..."
+              onChange={(event) => setImg(event.target.value)}
+              name="img"
+            />
+            <button onClick={handleUpdateCar}>Editar</button>
+          </div>
         </div>
       </div>
     </>

@@ -1,0 +1,78 @@
+.modal-update-overlay {
+  background-color: rgba(0, 0, 0, 0.502);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.modal-update-container {
+  width: 100%;
+  max-width: 600px;
+  min-height: 250px;
+  background-color: #ffd02f;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+.modal-update-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30%;
+  margin-bottom: 1rem;
+}
+
+.modal-update-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem;
+  gap: 0.2rem;
+  height: 70%;
+  width: 100%;
+}
+.modal-update-body > input {
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  outline: none;
+  width: 80%;
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.modal-update-body > button {
+  padding: 0.5rem;
+  width: 40%;
+  border-radius: 0.7rem;
+  border: none;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.modal-update-body > button:hover {
+  background-color: orange;
+  border: 1px black outset;
+  color: black;
+  font-weight: 600;
+}
+
+.modal-update-header > span {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.modal-update-header > span:hover {
+  transform: scale(2);
+  transition: 0.7s;
+}
