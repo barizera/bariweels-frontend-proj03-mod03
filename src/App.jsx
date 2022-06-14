@@ -12,7 +12,7 @@ function App() {
   const [cars, setCars] = useState([]);
 
   const getCars = async () => {
-    const res = await fetch("http://localhost:3001/cars/getAllCars");
+    const res = await fetch("https://carsbariwheels-api.herokuapp.com/cars/getAllCars");
     const carsList = await res.json();
 
     setCars(carsList);

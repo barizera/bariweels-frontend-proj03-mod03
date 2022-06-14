@@ -18,7 +18,7 @@ const ModalCreateCar = ({ closeModal, getCars }) => {
       img,
     };
 
-    const res = await fetch("http://localhost:3001/cars/createCar", {
+    const res = await fetch("https://carsbariwheels-api.herokuapp.com/cars/createCar", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

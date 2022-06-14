@@ -19,7 +19,7 @@ const ModalUpdateCar = ({ closeModal, cars, getCars }) => {
     };
 
     const res = await fetch(
-      `http://localhost:3001/cars/updateCar/${cars._id}`,
+      `https://carsbariwheels-api.herokuapp.com/cars/updateCar/${cars._id}`,
       {
         method: "PUT",
         headers: {

@@ -5,7 +5,7 @@ import { toast } from "react-hot-toast";
 const ModalRemoveCar = ({ closeModal, cars, getCars }) => {
   const handleRemoveCar = async () => {
     const res = await fetch(
-      `http://localhost:3001/cars/deleteCar/${cars._id}`,
+      `https://carsbariwheels-api.herokuapp.com/cars/deleteCar/${cars._id}`,
       {
         method: "DELETE",
         mode: "cors",
